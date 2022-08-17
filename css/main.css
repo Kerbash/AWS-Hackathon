@@ -1,0 +1,58 @@
+html {
+    min-height: 100%;
+    font-size: 18px;
+}
+
+body {
+    margin: 0 0 40px 0;
+    background-color: #b9f7ff;
+}
+
+.jumbotron {
+    background-color: #b6ffc6;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.jumbo-text {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Satisfy', cursive;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    margin-bottom: 0;
+}
+
+.btn {
+    color: #000;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5rem;
+}
+
+.btn:focus {
+    text-decoration: none;
+}
+
+.card {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bot {
+    position: fixed;
+    height: 100px;
+    width: auto;
+    bottom: 15px;
+    right: 15px;
+}
