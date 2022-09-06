@@ -49,7 +49,12 @@ def chat_response():
     new_dialog = request.headers.get("new_dialog")
 
     # get the current dialog to send back
-    cur_dialog = DialogBank[new_dialog]
+    try:
+        cur_dialog = DialogBank[new_dialog]
+    except KeyError:
+        print("KeyError: " + new_dialog)
+        print("Only has these keys: " + str(DialogBank.keys()))
+
     # create the button response
     btn_html = ""
     # create the button html
