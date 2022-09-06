@@ -46,7 +46,7 @@ def chat_response():
     """
 
     # get the response
-    new_dialog = request.headers.get("new_dialog")
+    new_dialog = request.headers.get("dialog")
 
     # get the current dialog to send back
     try:

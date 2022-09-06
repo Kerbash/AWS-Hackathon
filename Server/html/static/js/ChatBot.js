@@ -1,7 +1,7 @@
 function response(option) {
     let xmlHttpReq = new XMLHttpRequest();
     xmlHttpReq.open("GET", window.location.href + "/chat_response", true);
-    xmlHttpReq.setRequestHeader("new_dialog", option)
+    xmlHttpReq.setRequestHeader("dialog", option)
     // send request
     xmlHttpReq.send(null);
 
