@@ -24,6 +24,9 @@ class AwsServer():
         # load the blueprints ig the html function
         self.webApp.register_blueprint(main_blueprint)
 
+    def getApp(self):
+        return self.webApp
+
     def run(self):
         # host the app at port 8080
         self.webApp.run(self.webApp.config["HOSTNAME"], port="8080")
